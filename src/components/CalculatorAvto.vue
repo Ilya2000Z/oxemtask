@@ -82,7 +82,6 @@
                                 "total_sum": Number(this.DefaultStyle(this.Sumcontract())),
                                 "monthly_payment_from": this.MonthPay(),
                             };
-                            console.log(JSON.stringify(information))
                 document.getElementById("loader").classList.add("loader")
                 document.getElementById("text").style.display = "none"
                 document.getElementById("btn").classList.add("btn_disabled")
