@@ -79,9 +79,10 @@
                                 "initail_payment": (this.price*this.percent)/100,
                                 "initail_payment_percent": this.percent,
                                 "lease_term": this.month,
-                                "total_sum": this.DefaultStyle(this.Sumcontract()),
+                                "total_sum": Number(this.DefaultStyle(this.Sumcontract())),
                                 "monthly_payment_from": this.MonthPay(),
                             };
+                            console.log(JSON.stringify(information))
                 document.getElementById("loader").classList.add("loader")
                 document.getElementById("text").style.display = "none"
                 document.getElementById("btn").classList.add("btn_disabled")
